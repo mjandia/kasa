@@ -2,23 +2,30 @@ import React, { useState } from "react";
 import flecheBas from "../image/flecheBas.png";
 import flecheHaut from "../image/flecheHaut.png";
 
-function ToggleButton({ text }) {
+const ToggleButton = (props) => {
   const [isShowing, setIsShowing] = useState(false);
 
-  function handleClick() {
-    setIsShowing(!isShowing);
-  }
-
   return (
-    <div>
+    <div className="toggle-container">
+      <h2>{props.title}</h2>
       <img
         src={isShowing ? flecheHaut : flecheBas}
-        alt="Toggle Button"
-        onClick={handleClick}
+        alt="fleche"
+        className="fleche"
+        onClick={() => setIsShowing(!isShowing)}
       />
-      {isShowing && <p>{text}</p>}
+      {isShowing && (
+        <div className="text-background"> {/* Ajoutez cette div */}
+          <Text text={props.text} />
+        </div>
+      )}
     </div>
+
   );
-}
+};
+
+const Text = (props) => { 
+  return <div className="text">{props.text}</div>;
+};
 
 export default ToggleButton;

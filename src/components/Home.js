@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import Case from './Case';
 import logements from './logements.json';
 
-
 function Home() {
     return (
         <>
@@ -13,7 +12,8 @@ function Home() {
         <main>
             <div className="background">
             {logements.map((logement) => (
-            <Case key={logement.id} content={logement} />
+            <Case className="gallery-case"
+            key={logement.id} content={logement} />
       ))}
                 </div>
         </main>

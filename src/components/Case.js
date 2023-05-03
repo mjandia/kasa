@@ -1,13 +1,13 @@
 import '../styles/Gallery.css'
 
 
-function Case({content}) {
+function Case({content, className }) {
     return (
-        <div className="case">
-            <h2>{content.title}</h2>
-            <p>{content.description}</p>
-            <p>Host: {content.host.name}</p>
+        <div className={`case ${className}`}>
+            <h3>{content.title}</h3>
+            {content.pictures && content.pictures[0] &&
             <img src={content.pictures[0]} alt={content.title} />
+            }
         </div>    
     )
 }
