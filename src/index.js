@@ -4,10 +4,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-import Propos from "./components/Propos";
-import Home from "./components/Home";
-
-
+import Propos from "./routes/Propos";
+import Home from "./routes/Home";
+import NotFound from "./routes/NotFound";
+import LogementPageProduit from "./routes/LogementPageProduit";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,14 @@ const router = createBrowserRouter([
     path: "propos",
     element: <Propos />,
   },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+  {
+    path: "logement/:id",
+    element: <LogementPageProduit />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

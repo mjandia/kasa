@@ -4,7 +4,7 @@ import logofooter from '../image/logofooter.png'
 function Footer() {
     return (
         <footer>
-        <h2><img src={logofooter} alt='' className='logofooter' /></h2>
+        <img src={logofooter} alt='' className='logofooter' />
         <div className='right'>© 2020 Kasa. All rights reserved</div>
         </footer>
     );

@@ -15,7 +15,7 @@ const ToggleButton = (props) => {
         onClick={() => setIsShowing(!isShowing)}
       />
       {isShowing && (
-        <div className="text-background"> {/* Ajoutez cette div */}
+        <div className="text-background">
           <Text text={props.text} />
         </div>
       )}
