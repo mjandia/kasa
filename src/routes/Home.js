@@ -11,21 +11,23 @@ import '../styles/Banner.css'
 function Home() {
     return (
         <>
+        <div className="container">
         <Header />
         <Banner />  
         <main>
-            <div className="container">
+        
             <div className="background">
             {logements.map((logement) => (
-                 <Link to={`/logement/${logement.id}`} key={logement.id}>
-            <Case className="gallery-case"
-            key={logement.id} content={logement} />
-            </Link>
+                <Link to={`/logement/${logement.id}`} key={logement.id}>
+                    <Case className="gallery-case" key={logement.id} content={logement} />
+                </Link>
       ))}
                 </div>
-                </div>
+                
         </main>
+       
         <Footer />
+        </div>
         </>
         ) 
 }

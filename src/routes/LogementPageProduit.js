@@ -21,6 +21,7 @@ const rating = Number(logement.rating);
 
 return (
     <>
+    <div className="container">
       <Header />
 
       <div className="product">
@@ -70,6 +71,7 @@ return (
       </div>
 
       <Footer />
+      </div>
     </>
   );
 }

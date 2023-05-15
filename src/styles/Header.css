@@ -1,3 +1,7 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 header {
     height: 47px;
     display: flex;
@@ -40,34 +44,4 @@ nav a:visited {
 img {
     width: 145px;
     height: 47px;
-}
-@media screen and (min-width: 768px) {
-
-header {
-    height: 47px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 150px 0 150px;
-}
-nav {
-    font-family: 'Montserrat';
-    font-size: 24px;
-    line-height: 17.11px;
-    gap: 10px;
-    text-align: center;
-    color: #FF6060;
-    text-decoration: none;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    margin: 30px 10px 0 0;
-}
-.logo1 {
-    width: 210px;
-    height: 68px;
-    border-radius: 0;
-    margin: 30px 0 0 0;
-}
 }

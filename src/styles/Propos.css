@@ -1,12 +1,13 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .toggle-container {
     display: inline-block;
     vertical-align: top;
     position: relative;
     width: 100%;
-}
-.propos-container {
-    display: flex;
-    flex-direction: column;
 }
 .propos-item {
     background: #FF6060;
@@ -49,12 +50,19 @@ h2 {
     padding: 10px;
     border-radius: 0 0 5px 5px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+html, body {
+    margin: 0 auto;
+    width: 1240px;
+}
+.main {
+    width: 1240px;
+}
 h2 {
-        font-size: 24px;
-        color: #ffffff;
-        padding: 10px 10px  0 10px;
-        text-align: left;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 10px 10px  0 10px;
+    text-align: left;
 }
 .text {
     font-size: 24px;

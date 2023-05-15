@@ -1,3 +1,8 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 .titleProduit {
     font-size: 18px;
     font-weight: 500;
@@ -106,4 +111,71 @@ h4 {
 .ratingcontainer {
     position: relative;
     bottom: 55px;
+}
+@media screen and (min-width: 992px){
+.host h4 {
+    margin-right: 10px;
+    color: #FF6060;
+    position: relative;
+    bottom: 55px;
+    left: 830px;
+}
+      
+.host img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    bottom: 60px;
+    left: 830px;
+}
+      
+.ratingcontainer {
+    position: relative;
+    bottom: 55px;
+    left: 1140px;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 25.67px;
+    text-align: right;
+    margin: 10px 20px 0 190px;
+    width: 10%;
+}
+.starImage {
+    width: 24.75px;
+    height: 24px;
+}
+.tags {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: #FF6060;
+    width: 100%;
+    gap: 2px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14.26px;
+    font-family: "Montserrat";
+    margin: 10px 0 0 -30px;
+}
+.location {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+    margin: -10px 0 0 0;
+}
+.titleProduit {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+    color: #FF6060;
+    text-align: left;
+}     
 }

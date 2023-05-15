@@ -8,7 +8,9 @@ import '../styles/Propos.css';
 
 function Propos() {
     return (
-        <><Header />
+        <>
+        <div className="container">
+        <Header />
         <Banner />
         <main>
             <div className="backgroundPropos">
@@ -45,6 +47,7 @@ function Propos() {
             </div>
         </main>
         <Footer />
+        </div>
         </>
     )
 }
