@@ -13,7 +13,7 @@ function Home() {
         <>
         <div className="container">
         <Header />
-        <Banner />  
+        <Banner /> 
         <main>
         
             <div className="background">
@@ -25,9 +25,9 @@ function Home() {
                 </div>
                 
         </main>
-       
-        <Footer />
         </div>
+        <Footer />
+        
         </>
         ) 
 }

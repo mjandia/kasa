@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import ToggleButton from '../components/ToggleButton';
 import '../styles/Propos.css';
+import '../styles/Global.css';
 
 
 function Propos() {

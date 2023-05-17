@@ -1,4 +1,3 @@
-
 footer {
     background: #000000;
     color: #ffffff;
@@ -27,5 +26,13 @@ h2 {
     line-height: 17.11px;
     text-align: center;
     margin: 20px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 0 auto;
+}    
 }
 

@@ -26,6 +26,8 @@ return (
 
       <div className="product">
         <Carousel slides={logement.pictures} />
+        <div className="allDetail">
+        <div className="appartment">
         <p className="titleProduit">{logement.title}</p>
         <p className="location">{logement.location}</p>
         <ul className="tags">
@@ -33,6 +35,8 @@ return (
             <li key={index}>{tag}</li>
           ))}
         </ul>
+        </div>
+        <div className="owner">
         <div className="host">
           <h4>{logement.host.name}</h4>
           
@@ -50,7 +54,8 @@ return (
             );
           })}
           </div>
-        
+          </div>
+          </div>
         <div className="propos-item">
         <ToggleButton
         title="Description"
