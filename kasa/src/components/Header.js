@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <header>
-            <img src={logo1} alt='' className='logo1' />
+        <header><Link to='/'>
+            <img src={logo1} alt='' className='logo1' /></Link>
             <nav className="nav">
                 <Link to='/'>Accueil</Link>
                 <Link to='propos'>A Propos</Link>

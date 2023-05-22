@@ -7,25 +7,31 @@ const ToggleButton = (props) => {
 
   return (
     <div className="toggle-container">
-      <h2>{props.title}</h2>
-      <img
-        src={isShowing ? flecheHaut : flecheBas}
-        alt="fleche"
-        className="fleche"
+      <div
+        className="title-container"
         onClick={() => setIsShowing(!isShowing)}
-      />
+      >
+        <h2>{props.title}</h2>
+        <img
+          src={isShowing ? flecheHaut : flecheBas}
+          alt="fleche"
+          className="fleche"
+        />
+      </div>
       {isShowing && (
         <div className="text-background">
           <Text text={props.text} />
         </div>
       )}
     </div>
-
   );
 };
 
-const Text = (props) => { 
-  return <div className="text">{props.text}</div>;
+const Text = (props) => {
+  
+ 
+return <div className="text">{props.text}</div>;
 };
+
 
 export default ToggleButton;

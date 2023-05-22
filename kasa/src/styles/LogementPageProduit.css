@@ -11,6 +11,7 @@
     font-size: 16px;
     color: #FF6060;
     margin-bottom: 20px;
+    font-family: "Montserrat";
 }
   
 .host {
@@ -18,10 +19,12 @@
     width: 40%;
     align-items: center;
     margin-bottom: 20px;
+    font-family: "Montserrat";
 }
   
 .host, h4 {
     color: #FF6060;
+    font-family: "Montserrat";
 }
   
 .host img {
@@ -54,6 +57,7 @@
     color: #FF6060;
     display: flex;
     flex-wrap: wrap;
+    font-family: "Montserrat";
 }
   
 .tags {
@@ -68,7 +72,7 @@
     font-weight: 500;
     line-height: 14.26px;
     font-family: "Montserrat";
-    margin: 10px 0 0 -30px;
+    margin: 10px 0 0 -40px;
 }
   
 .tags li {
@@ -90,7 +94,7 @@ h4 {
     font-family: "Montserrat";
     line-height: 17.11px;
     text-align: right;
-    margin: 10px 20px 0 0px;
+    margin: 10px 35px 0 0px;
     width: 10%;
 }
 .starImage {
@@ -104,13 +108,14 @@ h4 {
     color: #E3E3E3;
 }
 .ratingcontainer {
-    margin: 0 60px 0 0;
+    position: relative;
+    top: 15px;
+    left: -95px;
 }
 .owner {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 0 0 70px;
 }
 @media screen and (min-width: 768px){
 .allDetail {
@@ -122,6 +127,9 @@ h4 {
 .owner {
     display: flex;
     flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    margin: 0 35px 0 0;
 }
 .picture + img {
     width: 64px;
@@ -129,6 +137,8 @@ h4 {
 }
 .host h4 {
     color: #FF6060;
+    font-family: "Montserrat";
+    margin: 0 65px 0 0;
 }
       
 .host img {
@@ -175,9 +185,31 @@ h4 {
 .titleProduit {
     font-size: 36px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     font-family: "Montserrat";
     color: #FF6060;
     text-align: left;
-}     
+}
+.host {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+.ratingcontainer {
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+.propos-item {
+    width: 100%;
+    margin: 50px 0px 30px 0;
+}
+.propos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}  
 }
