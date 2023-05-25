@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logements from '../components/logements.json';
 import '../styles/LogementPageProduit.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Carousel from '../components/Carousel'; 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -12,14 +12,19 @@ import '../styles/Propos.css';
 
 function Product() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const logement = logements.find(logement => logement.id === id);
   
-  const rating = Number(logement.rating);
-  
+useEffect(() => {
+  if (!logement) {
+    navigate('/notfound', { replace: true });
+  }
+}, [logement, navigate]);
+
   if (!logement) {
     return null;
   }
-  
+  const rating = Number(logement.rating);
   
 
   return (
