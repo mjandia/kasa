@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../components/Header";
 import Footer from '../components/Footer';
-import Banner2 from '../components/Banner2';
+import Banner from '../components/Banner';
 import ToggleButton from '../components/ToggleButton';
 import '../styles/Propos.css';
 import '../styles/Global.css';
@@ -12,7 +12,7 @@ function Propos() {
         <>
         <div className="container">
         <Header />
-        <Banner2 />
+        <Banner />
         <main>
             <div className="backgroundPropos">
                 <div className="propos-item">
