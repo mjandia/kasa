@@ -1,4 +1,5 @@
 footer {
+    position: absolute;
     background: #000000;
     color: #ffffff;
     display: flex;
@@ -7,6 +8,8 @@ footer {
     align-items: center;
     height: 209px;
     margin: 50px 0 0 0;
+    left: 0;
+    right: 0;
 }
 .logofooter {
     width: 122px;
