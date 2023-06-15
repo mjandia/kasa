@@ -57,7 +57,7 @@
   flex-wrap: wrap;
   justify-content: center;
   border-Radius: 20px;
-  gap: 20px;
+  gap: 60px;
 }
 .gallery-case {
   background: #FF6060;
@@ -65,10 +65,10 @@
   font-Family: Arial;
   height: 350px;
   position: relative;
-  width: 300px;
+  width: 350px;
 }
 .case img {
-  width: 300px;
+  width: 350px;
   height: 350px;
   border-radius: 20px;
   object-fit: cover;

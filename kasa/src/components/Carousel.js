@@ -13,27 +13,37 @@ function Carousel({ slides }) { /* slides = props */
     return () => clearInterval(timer);
   }, [slides]); /* le tableau slides est réinitialisé à chaque changement d'image grâce à useEffect */
 
+  const countNumberNext = () => {
+    setCurrentSlide((currentSlide + 1) % slides.length);
+  }
+  const countNumberPrev = () => {
+    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
+  }
+
   return ( /* Ensuite est retourné en interface utilisateur un tableau d'image où currensSlide est l'index et slides, props, est la liste */
     <div className="carousel">
+      <div className='counter'>{`${currentSlide + 1}/${slides.length}`}</div>
       <img
         src={slides[currentSlide]}
         alt={`Slide ${currentSlide}`}
       />
       <button
         className="arrowLeft" /* Bouton de navigation gauche et le gestinnaire d'évènements onClick au lieu et place du addEventListener */
-        onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}
+        onClick={countNumberNext}
       >
         &#8592; 
       </button>
       <button
         className="arrowRight"
-        onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}
+        onClick={countNumberPrev}
       >
         &#8594;
       </button>
     </div>
   );
 }
+
+
 
 export default Carousel; /* Exporation du carrousel pour pouvoir le réutliser ailleurs */ 
 /* &#859, Entité de caractère numérique représentant la flèche gauche */

@@ -42,10 +42,12 @@ h4{
 }
 a {
     text-decoration: none !important;
+    color: #FF6060;
 }
 a:hover {
     text-decoration: underline !important;
     text-decoration-color: blue !important;
+    color: #FF6060;
 }
 
 @media screen and (min-width: 768px) {

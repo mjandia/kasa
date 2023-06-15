@@ -33,7 +33,7 @@
     margin: 80px 0 0 0;
     }
 .everywhere {
-    width: 80%;
+    width: 100%;
     font-size: 48px;
     font-weight: 500;
     font-family: "Montserrat";
@@ -45,4 +45,20 @@
     top: 150px;
     align-items: center;
     }
+}
+@media screen and (min-width: 992px) {
+    
+.everywhere {
+    width: 100%;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    line-height: 68.45px;
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    align-items: center;
+}
 }
