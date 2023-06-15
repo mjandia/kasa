@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import ToggleButton from "../components/ToggleButton";
 import '../styles/Propos.css';
 
-
 function Product() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -78,7 +77,7 @@ useEffect(() => { /* ici l'utilisation de useEffect comme hook permeet grâce à
           <div className="propos-item">
             <ToggleButton 
               title="Equipements"
-              textEquipment={logement.equipments.join(' , ')}
+              text={logement.equipments.join(' , ')}
               className="equipments"
             />
           </div>
