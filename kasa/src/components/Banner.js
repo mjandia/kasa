@@ -18,7 +18,6 @@ function BannerPresentation () {
         return (
         <div>
         <img src={Background1} alt='' className='Banner' />
-        <h2 className='everywhere'>Chez vous, partout et ailleurs</h2>
         </div>
         );
     }
