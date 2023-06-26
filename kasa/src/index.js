@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "propos",
+    path: "/propos",
     element: <Propos />,
   },
   {
