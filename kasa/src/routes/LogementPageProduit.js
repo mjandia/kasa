@@ -77,8 +77,8 @@ useEffect(() => { /* ici l'utilisation de useEffect comme hook permeet grâce à
           <div className="propos-item">
             <ToggleButton 
               title="Equipements"
-              text={logement.equipments.join(' , ')}
-              className="equipments"
+              text1={logement.equipments.join(' , ')}
+              className="equipment"
             />
           </div>
         </div>

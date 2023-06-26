@@ -6,7 +6,7 @@
 }
 .propos-item {
     background: #FF6060;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 .text {
@@ -68,7 +68,6 @@ h2 {
     font-family: 'Montserrat';
     line-height: 29.22px;
 }
-
 .fleche {
     color: #ffffff;
     width: 16px;
@@ -83,5 +82,9 @@ h2 {
     border-radius: 10px;
     margin-bottom: 10px;
     width: 100%;
+}
+.propos {
+    font-size: 24px;
+    color: #FF6060;
 }
 }

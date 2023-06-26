@@ -51,7 +51,7 @@
     margin: -10px 0 0 0;
 }
   
-.equipments {
+.equipment {
     list-style-type: none;
     margin-bottom: 20px;
     color: #FF6060;
@@ -77,7 +77,7 @@
   
 .tags li {
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #FF6060;
     color: #ffffff;
 }
@@ -211,5 +211,19 @@ h4 {
     gap: 20px;
     flex-wrap: nowrap;
     align-items: flex-start;
-}  
+}
+.description {
+    font-size: 24px;
+    color: #FF6060;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+.equipment {
+    list-style-type: none;
+    margin-bottom: 20px;
+    color: #FF6060;
+    display: flex;
+    font-family: "Montserrat";
+    font-size: 24px;
+}
 }

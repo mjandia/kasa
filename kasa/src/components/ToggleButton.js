@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import flecheBas from "../image/flecheBas.png";
 import flecheHaut from "../image/flecheHaut.png";
+
  
 
 const ToggleButton = (props) => {
@@ -23,7 +24,7 @@ if (toggleButtonPath.startsWith('/logement/')) {
         </div>
         {isShowing && (
           <div className="text-background">
-            <Text text={props.text} />
+            <Text description={props.text} equipment={props.text1} />
           </div>
         )}
       </div>
@@ -46,7 +47,7 @@ if (toggleButtonPath === '/propos') {
       </div>
       {isShowing && (
         <div className="text-background">
-          <Text text={props.text} />
+          <Text propos={props.text} />
         </div>
       )}
     </div>
@@ -59,7 +60,11 @@ else {
 };
 
 const Text = (props) => {
-  return <div className="text">{props.text}</div>;
+  return <div className="text">
+    {props.description && <div className="description">{props.description}</div>}
+    {props.equipment && <div className="equipment">{props.equipment}</div>}
+    {props.propos && <div className="propos">{props.propos}</div>}
+    </div>;
 };
   
 
